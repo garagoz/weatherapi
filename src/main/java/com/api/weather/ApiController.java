@@ -8,7 +8,7 @@ import java.util.Date;
 @RestController
 public class ApiController {
     @GetMapping("/api/hello")
-    public String hello() {
-        return "Hello World Rest Api. The current time is "+ new Date();
+    public Response hello() {
+        return new Response("Hello World Rest Api. The current time is ");
     }
 }
